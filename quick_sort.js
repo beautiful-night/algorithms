@@ -6,7 +6,7 @@ for (let i = 0; i < 1000000; i++) {
 }
 
 const start = new Date().getTime();
-function quick_sort(arr, l, r) {
+function quick_sort (arr, l, r) {
     if (l < r) {
         let i = l, j = r, x = arr[l];
         while (i < j) {

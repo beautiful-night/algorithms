@@ -6,7 +6,7 @@ for (let i = 0; i < 1000000; i++) {
 }
 
 const start = new Date().getTime();
-function mergeSort(arr) {
+function mergeSort (arr) {
     if (arr.length > 1) {
         const mid = Math.floor(arr.length / 2);
         const left = mergeSort(arr.slice(0, mid));
@@ -15,7 +15,7 @@ function mergeSort(arr) {
     }
     return arr;
 }
-function merge(left, right) {
+function merge (left, right) {
     let i = 0, j = 0;
     const res = [];
     while (i < left.length && j < right.length) {
